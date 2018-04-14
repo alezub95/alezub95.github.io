@@ -4,9 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <title>Zapisy na szkolenie</title>
+    <link rel="stylesheet" 
 </head>
 
 <body>
+   <div id="formularz">
     <form method="POST" action="https://formspree.io/aleksandra.zubrzak@gmail.com">
 
         <label>Imie:</label><br>
@@ -15,10 +17,10 @@
         <label>Nazwisko:</label><br>
         <input type="text" name="nazwisko" id="nazwisko" placeholder="Twoje nazwisko" /> <br>
 
-        <label>Twój email:</label><br>
+        <label>E-mail:</label><br>
         <input type="text" name="email" id="email" placeholder="Twój email" /><br>
 
-        <label>Numer telefonu:</label><br>
+        <label>Telefon:</label><br>
         <input type="text" name="telefon" id="telefon" placeholder="Numer telefonu" /><br>
         <br>
         <label for="miasto">Miasto:</label><br>
@@ -37,14 +39,16 @@
         <label for="other">Inne</label>
         <input type="radio" name="gender" id="other" value="other" /><br>
         <br>
-        <label for="zgoda">Wyrażam zgodę na przetwarzanie moich danych osobowych dla potrzeb niezbędnych do realizacji procesu rekrutacji (zgodnie z Ustawą z dnia 29.08.1997 roku o Ochronie Danych Osobowych; tekst jednolity: Dz. U. 2016 r. poz. 922).</label>
-        <input type="checkbox" name="dane-osobowe" id="zgoda" value="tak" /><br>
-        <br>
         <label for="your-message">Wiadomość:</label><br>
         <textarea name="Your message" id="your-message" placeholder="Your message" maxlength="250"></textarea><br>
+        <label for="zgoda">Wyrażam zgodę na przetwarzanie moich danych osobowych.</label>
+        <input type="checkbox" name="dane-osobowe" id="zgoda" value="tak" /><br>
+        <br>
+       
 
-        <button type="submit">Wyślij!</button>
+        <button type="submit" id="button">Wyślij!</button>
     </form>
+    </div>
 
 
 
