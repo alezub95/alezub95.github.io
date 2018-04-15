@@ -27,7 +27,7 @@ figure {
 
 img[alt="image 1"]:hover {
 
-    transform: rotate(180deg);
+    transform: rotate(360deg);
     transition: transform 5s ease-in;
 }
 
@@ -39,6 +39,51 @@ img[alt="image 2"]:hover {
 
 img[alt="image 3"]:hover {
     
-    transform: translate(200px, 100px);
+    transform: translate(-200px, 100px);
     transition: transform 5s ease-in;
 }
+
+@keyframes resize {
+0%, 100% {
+width: 100%;
+}
+50% {
+width: 10%;
+}
+}
+img[alt="image 1"]:hover {
+animation-name: resize;
+animation-duration: 2s;
+animation-iteration-count: infinite;
+}
+
+@keyframes dupa {
+0%, 100% {
+width: 100%;
+}
+50% {
+width: 75%;
+}
+}
+img[alt="image 2"]:hover {
+animation-name: dupa;
+animation-duration: 2s;
+animation-timing-function: ease;
+animation-iteration-count: infinite;
+}
+
+@keyframes lalka {
+0%, 100% {
+width: 100%;
+}
+50% {
+width: 10%;
+}
+}
+img[alt="image 4"]:hover {
+animation-name: lalka;
+animation-duration: 2s;
+animation-timing-function: ease-in-out;
+animation-iteration-count: infinite;
+}
+
