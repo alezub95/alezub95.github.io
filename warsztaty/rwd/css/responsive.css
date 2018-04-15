@@ -1,0 +1,44 @@
+#gallery {
+    width: 100%;
+}
+
+figure {
+    width: 33.33%;
+    float: left;
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+
+
+    figure {
+        width: 50%;
+        float: left;
+    }
+}
+
+@media (max-width: 768px) {
+
+
+    figure {
+        width: 100%;
+
+    }
+}
+
+img[alt="image 1"]:hover {
+
+    transform: rotate(180deg);
+    transition: transform 5s ease-in;
+}
+
+img[alt="image 2"]:hover {
+    
+    transform: scale(2);
+    transition: transform 5s linear;
+}
+
+img[alt="image 3"]:hover {
+    
+    transform: translate(200px, 100px);
+    transition: transform 5s ease-in;
+}

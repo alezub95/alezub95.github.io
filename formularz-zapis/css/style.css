@@ -1,9 +1,59 @@
 #formularz {
-    width: 50%;
-    height: 100%;
     background-color: #213b50;
+    color: #fff;
+    padding: 20px;
 }
 
+form label {
+    display: block;
+}
+
+
+form input:focus, textarea:focus, select:focus {
+    background-color: #4e708c;
+    border-color: white;
+    border-style: solid;
+    border-width: 1px;
+}
+
+input, textarea, select {
+    background-color: #2b4a64;
+    border: none;
+    outline: none;
+}
+
+form select, textarea, input[type="text"], input[type="tel"], input[type="email"], 
+textarea {
+    width: 50%;
+    background-color: #2b4a64;
+    color: #fff;
+    border: 1px solid #2b4a64;
+    height: 25px;
+    
+}
+
+textarea {
+    height: 150px;
+}
+
+form input[type="checkbox"] {
+    float: left;
+}
+
+form button[type="submit"] {
+    background-color: lawngreen;
+    border: 1px solid lawngreen;
+    color: white;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+form button[type="submit"]:hover {
+    background-color: white;
+    color: lawngreen;
+}
 
 
 
