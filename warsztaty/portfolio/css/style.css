@@ -4,4 +4,10 @@
 
 body {
     font-family: "Lato", sans-serif;
+    background-color: black;
+}
+
+nav li {
+    color: #fff;
+    float: right;
 }
