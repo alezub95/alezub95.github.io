@@ -1,0 +1,56 @@
+.wrapper {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.img {
+    background-image: url(../img/man-1.jpg);
+    position: absolute;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.text {
+    font-family: "Verdana", sans-serif;
+    font-weight: 700;
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transition: translateY(-50%);
+    text-transform: uppercase;
+    color: white;
+}
+
+@media only screen and (max-width: 1170px) {
+    .img {
+        background-image: url(../img/man-2.jpg);
+        min-height: 70%;
+        height: 70%;
+    }
+
+    .text {
+        left: unset;
+        right: 30px;
+        transition: translateY(0);
+        top: 30px;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .img {
+        background-image: url(../img/man-1.jpg);
+        position: static;
+        min-height: 50%;
+        height: 50%;
+    }
+
+    .text {
+        position: static;
+        color: black;
+        text-align: center;
+    }
+}
