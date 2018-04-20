@@ -30,8 +30,9 @@ span {
 
 }
 
-.menu ul li a {
+.menu ul li a:link {
     text-decoration: none;
+    color: black;
 }
 
 .main-photo {
