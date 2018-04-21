@@ -382,7 +382,7 @@ form button[type="submit"] {
         max-height: inherit;
     }
     #about article {
-        width: 100p%;
+        width: 100%;
     }
     .portfolio-item {
         width: 100%;
