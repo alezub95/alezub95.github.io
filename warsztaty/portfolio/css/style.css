@@ -134,18 +134,67 @@ h3 {
     width: 50%;
 }
 
-#portfolio {
+#portfolio-item-1 {
+    background-image: url(../img/portfolio1.jpg);
+}
+
+#portfolio-item-2 {
+    background-image: url(../img/portfolio2.jpg);
+}
+
+
+#portfolio-item-3 {
+    background-image: url(../img/portfolio4.jpg);
+  
+}
+
+.portfolio-item {
+    height: 350px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     display: inline-block;
-    overflow: visible;
-
+    width: 33.333%;
+    position: relative;
 }
 
-#portfolio div img {
-    
-    height: 400px;
-    width: 400px;
-    
+.portfolio-items {
+    text-align: center;
+    font-size: 0;
 }
+
+.item-mask {
+    background: rgba(42,61,79,0.8);
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    position: absolute;
+    font-size: initial;
+}
+
+.item-mask:hover {
+    opacity: 1;
+    transition: all 0.3s ease-in-out;
+}
+
+.item-content {
+    border: 1px solid #fff;
+    margin: 10px; 
+    height: 330px;
+    position: relative;
+}
+
+.item-content-inner {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    right: 0;
+    padding: 5px;
+    color: #fff;
+}
+
+
 
 
 #contact {
