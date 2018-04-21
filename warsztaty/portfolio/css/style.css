@@ -195,6 +195,15 @@ h3 {
     color: #fff;
 }
 
+.item-content-inner a:hover {
+    
+    color: #1ac056;
+}
+
+.item-content-inner a {
+    color: #fff;
+}
+
 
 
 
