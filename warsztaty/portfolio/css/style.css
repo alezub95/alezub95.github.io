@@ -15,6 +15,10 @@ span {
     font-weight: 400;
 }
 
+#menu .toggle {
+    display: none;
+}
+
 nav {
     position: fixed;
     width: 100%;
@@ -330,3 +334,84 @@ form button[type="submit"] {
     text-align: center;
     margin: 0;
 }
+
+@media all and (max-width: 1200px) {
+    .portfolio-item {
+        width: 50%;
+    }
+    
+    .portfolio-item:last-child {
+        width: 100%;
+    }
+}
+    @media all and (max-width: 992px) {
+        .toggle {
+            display: block;
+            background-color: #fff;
+            padding: 0 20px;
+            color: #1ac056;
+            font-size: 20px;
+            line-height: 60px;
+            text-decoration: none;
+            border: none;
+            text-align: right;
+        }
+        ul {
+            display: none;
+        }
+        nav #drop:checked + ul {
+            display: block;
+        }
+        nav ul li {
+            display: block;
+            width: 100%;
+            padding: 20px;
+            text-align: right;
+        }
+        .header-content {
+            padding: 10%;
+        }
+        
+        #about figure {
+            width: 100%;
+        }
+        #about img { 
+        max-height: inherit;
+        }
+        #about article {
+            width: 100p%;
+        }
+        .portfolio-item {
+            width: 100%;
+        }
+        
+        .contact-data {
+            width: 100%;
+            text-align: center;
+        }
+        .contact-form {
+            width: 100%;
+        }
+        .contact-social-icons a {
+            margin: 0;
+        }
+}
+@media all and (max-width: 768px) {
+        body {
+            padding: 0 40px 50px;
+}
+    h1 {
+        font-size: 3em;
+    }
+    
+    h2 {
+        font-size: 1.5em;
+}
+}
+        
+@media all and (max-width: 576px) {
+    body {
+        padding 0 10px 30px;
+} 
+}
+    
