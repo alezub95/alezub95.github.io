@@ -135,15 +135,16 @@ h3 {
 }
 
 #portfolio {
-    display: inline;
-    overflow: hidden;
+    display: inline-block;
+    overflow: visible;
 
 }
 
-#portfolio div {
+#portfolio div img {
     
-    height: 300px;
-    width: 300px;
+    height: 400px;
+    width: 400px;
+    
 }
 
 
