@@ -1,0 +1,8 @@
+input {
+    width: 150px;
+    height: 50px;
+    background-color: pink;
+    font-size: 15px;
+    border-bottom-color: #fff;
+    cursor: pointer;
+}
