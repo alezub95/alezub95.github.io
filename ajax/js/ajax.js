@@ -1,6 +1,11 @@
 'use strict';
 
 var btn = document.getElementById('get');
+
+$(function (){
+$("input").after("<div id='dane-programisty'></div>");
+});
+
 var dane = document.getElementById('dane-programisty');
 
 function pobierzDane() {
@@ -16,7 +21,7 @@ function ajax (method, url) {
         if (httpReq.readyState == 4) {
             if (httpReq.status == 200) {
                 var data = httpReq.responseText;
-//                console.log(data);
+                
                 dane.innerHTML = data;
             }
         }
