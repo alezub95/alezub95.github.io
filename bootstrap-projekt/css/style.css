@@ -5,6 +5,12 @@ body {
 }
 
 
+#main-nav a,
+#main-nav ul li.nav-item a {
+    color: #fff;
+}
+
+
 header {
     position: relative;
     width: 100%;
@@ -13,8 +19,15 @@ header {
     url(../img/header/pictures_on_the_wall.jpg);
     background-repeat: no-repeat, no-repeat;
     background-position: center;
-    background-size: cover;   
-    
+    background-size: cover;
+
+}
+
+#services {
+
+    margin-bottom: 150px;
+    margin-top: 150px;
+
 }
 
 #box {
@@ -24,14 +37,21 @@ header {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    
+
+}
+
+#box .btn {
+    background-color: cyan;
+    width: 150px;
+    height: 50px;
+    color: #fff;
 }
 
 h1 {
     color: #fff;
     font-family: 'Montserrat', sans-serif;
     text-align: center;
-    font-size: 100px;    
+    font-size: 100px;
 }
 
 h2 {
@@ -39,23 +59,116 @@ h2 {
     font-size: 40px;
 }
 
-#services {
-    width: 100%;
-    height: 800px;
-    
+
+.border {
+    border-radius: 50%;
+    border-color: cyan;
+    background-color: cyan;
+    width: 75px;
+    height: 75px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+    transition: all 1s;
+
+}
+
+.border i {
+    color: #fff;
+    transform: translateY(25%);
+
+}
+
+.border i:hover {
+    transform: rotate(360dag);
+    color: cyan;
+    background-color: #fff;
 }
 
 h3 {
     font-family: 'Montserrat', sans-serif;
-    font-style: bold #333333;
-    font-size: 30px;
+    font-style: #333333;
+    font-size: 50px;
     text-align: center;
+    font-weight: bolder;
 
+}
+
+.napis {
+    font-weight: bold;
 }
 
 .podpis {
     font-family: 'Montserrat', sans-serif;
     font-size: 15px;
-    font-style: #777777;
+    color: #777777;
     text-align: center;
+    margin-bottom: 25px;
+}
+
+#portfolio {
+    background-color: #f7f7f7;
+    width: 100%;
+    height: 1000px;
+
+}
+
+.port {
+    background-color: #fff;
+    width: 100%;
+    height: 300px;
+}
+
+#img-1 {
+    background-image: url(../img/portfolio/chestnut_on_bracket.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    margin: 5px;
+
+}
+
+#img-2 {
+    background-image: url(../img/portfolio/typing_on_laptop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    margin: 5px;
+
+}
+
+#img-3 {
+    background-image: url(../img/portfolio/child_with_blue_paint.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    margin: 5px;
+}
+
+#img-4 {
+    background-image: url(../img/portfolio/chaotic_paint.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    margin: 5px;
+
+}
+
+#img-5 {
+    background-image: url(../img/portfolio/house_with_blue_doors.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    margin: 5px;
+
+}
+
+#img-6 {
+    background-image: url(../img/portfolio/box_of_cookies.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    margin: 5px;
+
 }
