@@ -33,6 +33,8 @@ nav {
 #main-nav a,
 #main-nav ul li.nav-item a:hover {
     color: #291f1a;
+    background-color: white;
+    padding-left: 15px;
 }
 
 
@@ -101,7 +103,8 @@ h3 {
 
 #portfolio {
     width: 100%;
-    height: 500px;
+    height: 100hv;
+    padding-bottom: 100px;
 }
 
 #portfolio-item-1 {
