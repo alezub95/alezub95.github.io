@@ -93,7 +93,6 @@ h3 {
 
 #skills {
     background-color: #f9fcfe;
-    height: 500px;
 }
 
 #skills p {
@@ -172,7 +171,7 @@ h3 {
     color: #fff;
 }
 
-.col-lg-4 {
+.col-sm-4 {
     padding: 0;
 }
 
@@ -284,9 +283,10 @@ form button[type="submit"] {
     padding: 0;
 }
 
-.col-6 {
+.cont {
     padding: 50px;
 }
+
 
 
 
