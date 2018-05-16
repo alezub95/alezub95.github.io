@@ -1,36 +1,23 @@
 'use strict';
 
-var btn = document.getElementById('get');
 
-$(function (){
-$("input").after("<div id='dane-programisty'></div>");
+$("#btn").click(function(e){
+	e.preventDefault();
+	
+	var ajaxUrl = "https://akademia108.pl/kurs-front-end/ajax/1-pobierz-dane-programisty.php";
+	$.ajax({
+		url: ajaxUrl,
+		dataType: "json",
+		success: function(element, index){
+		console.log(element);
+			var newElement = document.getElementById("area");
+			newElement.innerHTML += '<div id="dane-programisty">' + 
+				'<p>Imię: ' + element.imie + '</p>' +
+				'<p>Nazwisko: ' + element.nazwisko + '</p>' +
+				'<p>Zawód: ' + element.zawod + '</p>' +
+				'<p>Firma: ' + element.firma + '</p>' +
+				'</div>';
+
+		}  
+	});
 });
-
-var dane = document.getElementById('dane-programisty');
-
-function pobierzDane() {
-    ajax('GET', 'https://akademia108.pl/kurs-front-end/ajax/1-pobierz-dane-programisty.php');
-
-}
-
-function ajax (method, url) {
-    var httpReq = new XMLHttpRequest();
-    httpReq.open( method, url );
-
-    httpReq.addEventListener('readystatechange', function () {
-        if (httpReq.readyState == 4) {
-            if (httpReq.status == 200) {
-                var data = httpReq.responseText;
-                
-                dane.innerHTML = data;
-            }
-        }
-        
-    });
-
-
-httpReq.send();
-}
-
-btn.addEventListener('click', pobierzDane)
-
