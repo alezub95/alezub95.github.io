@@ -1,0 +1,17 @@
+@import "zmienne";
+@import "mixin";
+@import "general";
+
+nav {
+    @include menu-nawigacyjne;
+}
+
+header {
+     background-image: url(../img/header-background.jpg);
+        height: 500px;
+        background-position: center;
+        background-size: cover;
+        color: #fff;
+        margin-bottom: 50px;
+        @include naglowek;
+}

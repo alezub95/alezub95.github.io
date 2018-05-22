@@ -1,0 +1,16 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $font-lato;
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+    color: $color-body;
+}
+
+span {
+    color: $color-green;
+    font-weight: 400;
+}
