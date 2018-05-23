@@ -3,15 +3,54 @@
 @import "general";
 
 nav {
+    background-color: #fff;
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    top: 0;
+    z-index: 20;
     @include menu-nawigacyjne;
 }
 
 header {
-     background-image: url(../img/header-background.jpg);
-        height: 500px;
-        background-position: center;
-        background-size: cover;
-        color: #fff;
-        margin-bottom: 50px;
-        @include naglowek;
+    background-image: url(../img/header-background.jpg);
+    height: 500px;
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+    margin-bottom: 50px;
+    @include naglowek;
+}
+
+#about {
+    background-color: $color-back-skills-about;
+    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.1);
+    height: 100hv;
+    @include o-mnie;
+}
+
+#skills {
+    background-color: $color-back-skills-about;
+    @include umiejetnosci;
+}
+
+#portfolio {
+    width: 100%;
+    height: 100hv;
+    padding-bottom: 100px;
+    @include port;
+}
+
+.col-sm-4 {
+    padding: 0;
+}
+
+#contact {
+    background-color: #213b50;
+    width: 100%;
+    min-height: 500px;
+    color: #fff;
+    overflow: hidden;
+    @include kontakt;
+
 }
