@@ -98,13 +98,13 @@ nav {
       color: #291f1a;
       background-color: #fff;
       padding-left: 15px; }
-      nav a:hover ul li a {
-        color: #1ac056;
-        font-size: 20px; }
-        nav a:hover ul li a:hover {
-          color: #291f1a;
-          background-color: #fff;
-          padding-left: 15px; }
+  nav .navbarSupportedContent ul li a {
+    color: #1ac056;
+    font-size: 20px; }
+    nav .navbarSupportedContent ul li a:hover {
+      color: #291f1a;
+      background-color: #fff;
+      padding-left: 15px; }
 
 header {
   background-image: url(../img/header-background.jpg);
@@ -112,7 +112,7 @@ header {
   background-position: center;
   background-size: cover;
   color: #fff;
-  margin-bottom: 50px; }
+  margin-bottom: 100px; }
   header .header-content {
     text-align: center;
     top: 50%;
@@ -129,8 +129,8 @@ header {
 
 #about {
   background-color: #f9fcfe;
-  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.1);
-  height: 100hv; }
+  height: 100hv;
+  padding-bottom: 200px; }
   #about img {
     max-height: 400px;
     max-width: 100%;
@@ -139,7 +139,8 @@ header {
     margin-left: 100px; }
 
 #skills {
-  background-color: #f9fcfe; }
+  background-color: #f9fcfe;
+  padding-bottom: 200px; }
   #skills p {
     margin: 50px;
     margin-bottom: 100px; }

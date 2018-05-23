@@ -7,18 +7,20 @@
             color: $color-body;
             background-color: #fff;
             padding-left: 15px;
-            ul {
-                li {
+        }
+    }
+    .navbarSupportedContent {
+        ul {
+            li {
 
-                    a {
-                        color: $color-green;
-                        font-size: 20px;
-                        &:hover {
-                            color: $color-body;
-                            background-color: #fff;
-                            padding-left: 15px;
+                a {
+                    color: $color-green;
+                    font-size: 20px;
+                    &:hover {
+                        color: $color-body;
+                        background-color: #fff;
+                        padding-left: 15px;
 
-                        }
                     }
                 }
             }

@@ -18,19 +18,20 @@ header {
     background-position: center;
     background-size: cover;
     color: #fff;
-    margin-bottom: 50px;
+    margin-bottom: 100px;
     @include naglowek;
 }
 
 #about {
     background-color: $color-back-skills-about;
-    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.1);
     height: 100hv;
+    padding-bottom: 200px;
     @include o-mnie;
 }
 
 #skills {
     background-color: $color-back-skills-about;
+    padding-bottom: 200px;
     @include umiejetnosci;
 }
 
